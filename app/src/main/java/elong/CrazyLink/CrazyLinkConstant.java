@@ -10,9 +10,9 @@
 
 package elong.CrazyLink;
 
-public class CrazyLinkConstent {
+public class CrazyLinkConstant {
 	public static final float GRID_NUM = 7.0f;
-	public static int UNIT_SIZE = (int) (88 * CrazyLinkConstent.GRID_NUM);
+	public static int UNIT_SIZE = (int) (88 * CrazyLinkConstant.GRID_NUM);
 	public static int VIEW_WIDTH = 480;		//����������
 	public static int VIEW_HEIGHT = 800;	//��������߶�
 	public static int REAL_WIDTH = 480;		//��Ļʵ�ʿ��

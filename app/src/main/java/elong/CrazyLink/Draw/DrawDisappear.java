@@ -9,6 +9,7 @@
  ********************************************************/
 
 package elong.CrazyLink.Draw;
+
 import javax.microedition.khronos.opengles.GL10;
 
 import elong.CrazyLink.Control.CtlDisappear;
@@ -16,26 +17,23 @@ import elong.CrazyLink.Interface.IControl;
 
 public class DrawDisappear {
 
-	DrawAnimal drawAnimal;
-	
-	public IControl control;
-	
-	public DrawDisappear(DrawAnimal drawAnimal)
-	{
-		this.drawAnimal = drawAnimal;
-		
-		control = new CtlDisappear();
-	}
-	
-	public void draw(GL10 gl, int witch, int col, int row)
-	{
-		if(!control.isRun()) return;
-		if(0 == ((CtlDisappear)control).getCount() % 2)	//这里实现闪动	
-		{
-			gl.glPushMatrix();
-			drawAnimal.draw(gl, witch, col, row);
-			gl.glPopMatrix();
-		}		
-	}
-	
+    DrawAnimal drawAnimal;
+
+    public IControl control;
+
+    public DrawDisappear(DrawAnimal drawAnimal) {
+        this.drawAnimal = drawAnimal;
+
+        control = new CtlDisappear();
+    }
+
+    public void draw(GL10 gl, int witch, int col, int row) {
+        if (!control.isRun()) return;
+        if (0 == ((CtlDisappear) control).getCount() % 2) {   //这里实现闪动
+            gl.glPushMatrix();
+            drawAnimal.draw(gl, witch, col, row);
+            gl.glPopMatrix();
+        }
+    }
+
 }

@@ -21,7 +21,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Bitmap.Config;
 import android.opengl.GLUtils;
-import elong.CrazyLink.CrazyLinkConstent;
+
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlSingleScore;
 import elong.CrazyLink.Interface.IControl;
 
@@ -55,16 +56,16 @@ public class DrawSingleScore {
     {
     	if (col == 0) col = 1;
         vCount=6;//顶点的数量，一个正方形用两个三角形表示，共需要6个顶点
-        float deltaX = ((col-3)*64*CrazyLinkConstent.ADP_SIZE);
-        float deltaY = (((float)row-3 + y)*64*CrazyLinkConstent.ADP_SIZE);
+        float deltaX = ((col-3)*64* CrazyLinkConstant.ADP_SIZE);
+        float deltaY = (((float)row-3 + y)*64* CrazyLinkConstant.ADP_SIZE);
         int vertices[]=new int[]//顶点坐标数据数组
         {
-           	-mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0,
-        	-mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,-mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0,
-        	mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,-mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0,
-        	mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,-mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0,
-        	mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0,
-        	-mBitmapW/2*CrazyLinkConstent.ADP_SIZE+(int)deltaX,mBitmapH/2*CrazyLinkConstent.ADP_SIZE+(int)deltaY,0
+           	-mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0,
+        	-mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,-mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0,
+        	mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,-mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0,
+        	mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,-mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0,
+        	mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0,
+        	-mBitmapW/2* CrazyLinkConstant.ADP_SIZE+(int)deltaX,mBitmapH/2* CrazyLinkConstant.ADP_SIZE+(int)deltaY,0
         };
         //创建顶点坐标数据缓冲
         //int类型占用4个字节，因此转换为byte的数据时需要*4

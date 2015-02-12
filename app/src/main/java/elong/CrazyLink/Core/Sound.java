@@ -13,7 +13,7 @@ package elong.CrazyLink.Core;
 
 import java.util.HashMap;
 
-import elong.CrazyLink.CrazyLinkConstent.E_SOUND;
+import elong.CrazyLink.CrazyLinkConstant.E_SOUND;
 import elong.CrazyLink.R;
 
 import android.content.Context;

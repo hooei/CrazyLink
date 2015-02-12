@@ -15,7 +15,7 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import javax.microedition.khronos.opengles.GL10;
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlLifeDel;
 import elong.CrazyLink.Interface.IControl;
 
@@ -37,14 +37,14 @@ public class DrawLifeDel {
     private void initVertexBuffer()
     {
     	CtlLifeDel ctl = (CtlLifeDel)control;
-    	int w = CrazyLinkConstent.ADP_SIZE*ctl.getW();
-    	int h = CrazyLinkConstent.ADP_SIZE*ctl.getH();
+    	int w = CrazyLinkConstant.ADP_SIZE*ctl.getW();
+    	int h = CrazyLinkConstant.ADP_SIZE*ctl.getH();
     	float x = ctl.getX();
     	float y = ctl.getY();
     	
         vCount=6;//顶点的数量，一个正方形用两个三角形表示，共需要6个顶点   
-        int deltaX = (int)(x*32*CrazyLinkConstent.ADP_SIZE);
-        int deltaY = (int)(y*32*CrazyLinkConstent.ADP_SIZE);
+        int deltaX = (int)(x*32* CrazyLinkConstant.ADP_SIZE);
+        int deltaY = (int)(y*32* CrazyLinkConstant.ADP_SIZE);
         int vertices[]=new int[]//顶点坐标数据数组
         {
            	deltaX-w,deltaY+h,0,

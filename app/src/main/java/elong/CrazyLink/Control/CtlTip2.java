@@ -12,7 +12,7 @@ package elong.CrazyLink.Control;
 
 import android.os.Message;
 import elong.CrazyLink.Core.ControlCenter;
-import elong.CrazyLink.CrazyLinkConstent.E_TIP;
+import elong.CrazyLink.CrazyLinkConstant.E_TIP;
 
 public class CtlTip2 extends CtlBase{
 	

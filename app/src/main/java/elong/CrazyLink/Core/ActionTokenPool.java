@@ -10,7 +10,7 @@
 
 package elong.CrazyLink.Core;
 
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 
 public class ActionTokenPool {
 	
@@ -18,8 +18,8 @@ public class ActionTokenPool {
 
 	public ActionTokenPool()
 	{
-		mTokenInused = new boolean[CrazyLinkConstent.MAX_TOKEN];
-		for(int i = 0; i < CrazyLinkConstent.MAX_TOKEN; i++)
+		mTokenInused = new boolean[CrazyLinkConstant.MAX_TOKEN];
+		for(int i = 0; i < CrazyLinkConstant.MAX_TOKEN; i++)
 		{
 			mTokenInused[i] = false;
 		}
@@ -27,7 +27,7 @@ public class ActionTokenPool {
 	
 	synchronized int takeToken()
 	{
-		for(int i = 0; i < CrazyLinkConstent.MAX_TOKEN; i++)
+		for(int i = 0; i < CrazyLinkConstant.MAX_TOKEN; i++)
 		{
 			if (!mTokenInused[i])
 			{
@@ -40,6 +40,6 @@ public class ActionTokenPool {
 	
 	synchronized void freeToken(int token)
 	{
-		if(token >= 0 && token < CrazyLinkConstent.MAX_TOKEN) mTokenInused[token] = false;
+		if(token >= 0 && token < CrazyLinkConstant.MAX_TOKEN) mTokenInused[token] = false;
 	}
 }

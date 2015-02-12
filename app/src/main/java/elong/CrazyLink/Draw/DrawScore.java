@@ -17,7 +17,7 @@ import java.nio.IntBuffer;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 
 public class DrawScore {
 	
@@ -36,26 +36,26 @@ public class DrawScore {
     	    	
     	int w = 12;
     	int h = 16;
-        int deltaX = ((col-9)*2*w*CrazyLinkConstent.ADP_SIZE);
-        int deltaY = 10*2*h*CrazyLinkConstent.ADP_SIZE;
+        int deltaX = ((col-9)*2*w* CrazyLinkConstant.ADP_SIZE);
+        int deltaY = 10*2*h* CrazyLinkConstant.ADP_SIZE;
         
         if(1 == flag)
         {
         	w = 16;
         	h = 32;
-            deltaX = (int)((col-4.5)*2*w*CrazyLinkConstent.ADP_SIZE);
-            deltaY = (int)(-0.5*2*h*CrazyLinkConstent.ADP_SIZE);
+            deltaX = (int)((col-4.5)*2*w* CrazyLinkConstant.ADP_SIZE);
+            deltaY = (int)(-0.5*2*h* CrazyLinkConstant.ADP_SIZE);
         }
 
         vCount=6;//顶点的数量，一个正方形用两个三角形表示，共需要6个顶点   
         int vertices[]=new int[]//顶点坐标数据数组
         {
-           	-w*CrazyLinkConstent.ADP_SIZE+deltaX,h*CrazyLinkConstent.ADP_SIZE+deltaY,0,
-        	-w*CrazyLinkConstent.ADP_SIZE+deltaX,-h*CrazyLinkConstent.ADP_SIZE+deltaY,0,
-        	w*CrazyLinkConstent.ADP_SIZE+deltaX,-h*CrazyLinkConstent.ADP_SIZE+deltaY,0,
-        	w*CrazyLinkConstent.ADP_SIZE+deltaX,-h*CrazyLinkConstent.ADP_SIZE+deltaY,0,
-        	w*CrazyLinkConstent.ADP_SIZE+deltaX,h*CrazyLinkConstent.ADP_SIZE+deltaY,0,
-        	-w*CrazyLinkConstent.ADP_SIZE+deltaX,h*CrazyLinkConstent.ADP_SIZE+deltaY,0
+           	-w* CrazyLinkConstant.ADP_SIZE+deltaX,h* CrazyLinkConstant.ADP_SIZE+deltaY,0,
+        	-w* CrazyLinkConstant.ADP_SIZE+deltaX,-h* CrazyLinkConstant.ADP_SIZE+deltaY,0,
+        	w* CrazyLinkConstant.ADP_SIZE+deltaX,-h* CrazyLinkConstant.ADP_SIZE+deltaY,0,
+        	w* CrazyLinkConstant.ADP_SIZE+deltaX,-h* CrazyLinkConstant.ADP_SIZE+deltaY,0,
+        	w* CrazyLinkConstant.ADP_SIZE+deltaX,h* CrazyLinkConstant.ADP_SIZE+deltaY,0,
+        	-w* CrazyLinkConstant.ADP_SIZE+deltaX,h* CrazyLinkConstant.ADP_SIZE+deltaY,0
         };
         //创建顶点坐标数据缓冲
         //int类型占用4个字节，因此转换为byte的数据时需要*4

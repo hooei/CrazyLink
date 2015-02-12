@@ -17,7 +17,7 @@ import java.nio.IntBuffer;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlTip2;
 import elong.CrazyLink.Interface.IControl;
 
@@ -39,8 +39,8 @@ public class DrawTip2 {
     private void initVertexBuffer()
     {
     	CtlTip2 ctl = (CtlTip2)control;
-    	int w = CrazyLinkConstent.ADP_SIZE*ctl.getW();
-    	int h = CrazyLinkConstent.ADP_SIZE*ctl.getH();
+    	int w = CrazyLinkConstant.ADP_SIZE*ctl.getW();
+    	int h = CrazyLinkConstant.ADP_SIZE*ctl.getH();
     	
         vCount=6;//顶点的数量，一个正方形用两个三角形表示，共需要6个顶点   
         int vertices[]=new int[]//顶点坐标数据数组

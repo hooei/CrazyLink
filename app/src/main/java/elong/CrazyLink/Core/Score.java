@@ -10,8 +10,8 @@
 
 package elong.CrazyLink.Core;
 
-import elong.CrazyLink.CrazyLinkConstent;
-import elong.CrazyLink.CrazyLinkConstent.E_SOUND;
+import elong.CrazyLink.CrazyLinkConstant;
+import elong.CrazyLink.CrazyLinkConstant.E_SOUND;
 import android.os.Message;
 
 public class Score {
@@ -23,7 +23,7 @@ public class Score {
 	int mOver3 = 0;			//超过3个
 	int mJust3 = 0;			//等于3个
 	
-	int mLife = CrazyLinkConstent.LIFE_NUM;
+	int mLife = CrazyLinkConstant.LIFE_NUM;
 	
 	public Score()
 	{
@@ -125,7 +125,7 @@ public class Score {
 	public void increase(int clearNum)
 	{
 		mAwardRatio += (float)clearNum / 5;
-		if (clearNum > CrazyLinkConstent.LIFE_UP)
+		if (clearNum > CrazyLinkConstant.LIFE_UP)
 		{
 			lifeAddMsg();	//增加生命
 		}
@@ -136,7 +136,7 @@ public class Score {
 		if(clearNum > 3)
 		{
 			mOver3++;
-			if(1 == mOver3 % CrazyLinkConstent.MONSTER_APPEAR)
+			if(1 == mOver3 % CrazyLinkConstant.MONSTER_APPEAR)
 			{
 				//生成一个MONSTER
 				Message msg = new Message();
@@ -147,7 +147,7 @@ public class Score {
 		else
 		{
 			mJust3++;
-			if((CrazyLinkConstent.MONSTER_APPEAR * 3 - 1) == mJust3 % (CrazyLinkConstent.MONSTER_APPEAR * 3))
+			if((CrazyLinkConstant.MONSTER_APPEAR * 3 - 1) == mJust3 % (CrazyLinkConstant.MONSTER_APPEAR * 3))
 			{
 				//生成一个MONSTER
 				Message msg = new Message();

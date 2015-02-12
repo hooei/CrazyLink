@@ -15,7 +15,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlMonster;
 import elong.CrazyLink.Interface.IControl;
 
@@ -41,8 +41,8 @@ public class DrawMonster {
     {
     	    	
         vCount=6;//顶点的数量，一个正方形用两个三角形表示，共需要6个顶点   
-        int w = 32*CrazyLinkConstent.ADP_SIZE;
-        int h = 32*CrazyLinkConstent.ADP_SIZE;
+        int w = 32* CrazyLinkConstant.ADP_SIZE;
+        int h = 32* CrazyLinkConstant.ADP_SIZE;
         int deltaX = ((col-3)*2*w);
         int deltaY = ((row-3)*2*h);
         int vertices[]=new int[]//顶点坐标数据数组

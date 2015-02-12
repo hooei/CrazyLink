@@ -10,8 +10,8 @@
 
 package elong.CrazyLink.Interaction;
 
-import elong.CrazyLink.CrazyLinkConstent;
-import elong.CrazyLink.CrazyLinkConstent.E_SCENARIO;
+import elong.CrazyLink.CrazyLinkConstant;
+import elong.CrazyLink.CrazyLinkConstant.E_SCENARIO;
 import elong.CrazyLink.Core.ControlCenter;
 import android.content.Context;
 import android.os.Bundle;
@@ -49,7 +49,7 @@ public class ScreenTouch {
 		mContext = context;
 		mWidth = width;
 		mHeight = height;
-		mStep = (int) (width / CrazyLinkConstent.GRID_NUM);
+		mStep = (int) (width / CrazyLinkConstant.GRID_NUM);
 		mYStart = (mHeight - mWidth) / 2;
 	}
 	
@@ -105,13 +105,13 @@ public class ScreenTouch {
 			    float dx = x - mPreviousX;//计算触控笔Y位移
 			    if(Math.abs(dy) > Math.abs(dx))
 			    {
-			    	if(dy > CrazyLinkConstent.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.DOWN;
-			    	else if(dy < -CrazyLinkConstent.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.UP;
+			    	if(dy > CrazyLinkConstant.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.DOWN;
+			    	else if(dy < -CrazyLinkConstant.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.UP;
 			    }
 			    else
 			    {
-			    	if(dx > CrazyLinkConstent.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.RIGHT;
-			    	else if(dx < -CrazyLinkConstent.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.LEFT; 	
+			    	if(dx > CrazyLinkConstant.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.RIGHT;
+			    	else if(dx < -CrazyLinkConstant.MOVE_THRESDHOLDER) mMoveDirection = TOUCH_DIRECTION.LEFT;
 			    }
 		}
 		mPreviousY = y;//记录触控笔位置
@@ -172,7 +172,7 @@ public class ScreenTouch {
 	void raiseTouchMenuViewEvent()
 	{
 		ControlCenter.mScore.init();
-		ControlCenter.mScore.setLife(CrazyLinkConstent.LIFE_NUM);
+		ControlCenter.mScore.setLife(CrazyLinkConstant.LIFE_NUM);
 		ControlCenter.mTimer.reset();
 		ControlCenter.init();
 		Message msg = new Message();
@@ -194,8 +194,8 @@ public class ScreenTouch {
 		Bundle b = new Bundle();
 		int x  = getGridX();
 		int y = getGridY();
-		if(!(x >= 0 && x < (int)CrazyLinkConstent.GRID_NUM)) return;
-		if(!(y >= 0 && y < (int)CrazyLinkConstent.GRID_NUM)) return;
+		if(!(x >= 0 && x < (int) CrazyLinkConstant.GRID_NUM)) return;
+		if(!(y >= 0 && y < (int) CrazyLinkConstant.GRID_NUM)) return;
 		b.putInt("token", token);
 		b.putInt("col1", x);
 		b.putInt("row1", y);

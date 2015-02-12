@@ -10,7 +10,7 @@
 
 package elong.CrazyLink.Control;
 
-import elong.CrazyLink.CrazyLinkConstent.E_SOUND;
+import elong.CrazyLink.CrazyLinkConstant.E_SOUND;
 import elong.CrazyLink.Core.ControlCenter;
 
 public class CtlTip1 extends CtlBase{

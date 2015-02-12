@@ -11,7 +11,7 @@
 package elong.CrazyLink.Draw;
 
 import javax.microedition.khronos.opengles.GL10;
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlFill;
 import elong.CrazyLink.Interface.IControl;
 
@@ -40,7 +40,7 @@ public class DrawFill {
 		//if(!control.isRun()) return;
 		CtlFill ctl = (CtlFill)control;
 		gl.glPushMatrix();		
-		gl.glTranslatef(0f, ctl.getY()*CrazyLinkConstent.translateRatio, 0f);
+		gl.glTranslatef(0f, ctl.getY()* CrazyLinkConstant.translateRatio, 0f);
 		drawAnimal.draw(gl, witch, col, row);
 		gl.glPopMatrix();
 	}

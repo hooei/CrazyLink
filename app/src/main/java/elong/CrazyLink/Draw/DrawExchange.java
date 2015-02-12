@@ -11,7 +11,7 @@
 package elong.CrazyLink.Draw;
 
 import javax.microedition.khronos.opengles.GL10;
-import elong.CrazyLink.CrazyLinkConstent;
+import elong.CrazyLink.CrazyLinkConstant;
 import elong.CrazyLink.Control.CtlExchange;
 import elong.CrazyLink.Interface.IControl;
 
@@ -58,11 +58,11 @@ public class DrawExchange {
 		CtlExchange ctl = (CtlExchange) control;
 		if(!control.isRun()) return;
 		gl.glPushMatrix();		
-		gl.glTranslatef(ctl.getX1()*CrazyLinkConstent.translateRatio, ctl.getY1()*CrazyLinkConstent.translateRatio, 0f);
+		gl.glTranslatef(ctl.getX1()* CrazyLinkConstant.translateRatio, ctl.getY1()* CrazyLinkConstant.translateRatio, 0f);
 		drawAnimal.draw(gl, mWitch1, mCol1, mRow1);
 		gl.glPopMatrix();
 		gl.glPushMatrix();		
-		gl.glTranslatef(ctl.getX2()*CrazyLinkConstent.translateRatio, ctl.getY2()*CrazyLinkConstent.translateRatio, 0f);
+		gl.glTranslatef(ctl.getX2()* CrazyLinkConstant.translateRatio, ctl.getY2()* CrazyLinkConstant.translateRatio, 0f);
 		drawAnimal.draw(gl, mWitch2, mCol2, mRow2);
 		gl.glPopMatrix();		
 	}

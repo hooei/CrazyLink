@@ -1,0 +1,162 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitattributes
+* .gitignore
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* README.md
+* app\
+* app\build.gradle
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\java\
+* app\src\main\java\elong\
+* app\src\main\java\elong\CrazyLink\
+* app\src\main\java\elong\CrazyLink\Control\
+* app\src\main\java\elong\CrazyLink\Control\CtlAutoTip.java
+* app\src\main\java\elong\CrazyLink\Control\CtlBase.java
+* app\src\main\java\elong\CrazyLink\Control\CtlBomb.java
+* app\src\main\java\elong\CrazyLink\Control\CtlDisappear.java
+* app\src\main\java\elong\CrazyLink\Control\CtlExchange.java
+* app\src\main\java\elong\CrazyLink\Control\CtlExplosion.java
+* app\src\main\java\elong\CrazyLink\Control\CtlFill.java
+* app\src\main\java\elong\CrazyLink\Control\CtlLifeAdd.java
+* app\src\main\java\elong\CrazyLink\Control\CtlLifeDel.java
+* app\src\main\java\elong\CrazyLink\Control\CtlLoading.java
+* app\src\main\java\elong\CrazyLink\Control\CtlMonster.java
+* app\src\main\java\elong\CrazyLink\Control\CtlSingleScore.java
+* app\src\main\java\elong\CrazyLink\Control\CtlTip1.java
+* app\src\main\java\elong\CrazyLink\Control\CtlTip2.java
+* app\src\main\java\elong\CrazyLink\Core\
+* app\src\main\java\elong\CrazyLink\Core\ActionTokenPool.java
+* app\src\main\java\elong\CrazyLink\Core\ControlCenter.java
+* app\src\main\java\elong\CrazyLink\Core\Score.java
+* app\src\main\java\elong\CrazyLink\Core\Sound.java
+* app\src\main\java\elong\CrazyLink\Core\Timer.java
+* app\src\main\java\elong\CrazyLink\CrazyLinkActivity.java
+* app\src\main\java\elong\CrazyLink\CrazyLinkConstent.java
+* app\src\main\java\elong\CrazyLink\CrazyLinkGLSurfaceView.java
+* app\src\main\java\elong\CrazyLink\Draw\
+* app\src\main\java\elong\CrazyLink\Draw\DrawAnimal.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawAutoTip.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawBackGround.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawBomb.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawDisappear.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawExchange.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawExplosion.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawFill.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawGrid.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawLife.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawLifeAdd.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawLifeDel.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawLoading.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawMonster.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawScore.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawSingleScore.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawTimeBar.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawTip1.java
+* app\src\main\java\elong\CrazyLink\Draw\DrawTip2.java
+* app\src\main\java\elong\CrazyLink\Interaction\
+* app\src\main\java\elong\CrazyLink\Interaction\ScreenTouch.java
+* app\src\main\java\elong\CrazyLink\Interface\
+* app\src\main\java\elong\CrazyLink\Interface\IControl.java
+* app\src\main\res\
+* app\src\main\res\drawable-nodpi\
+* app\src\main\res\drawable-nodpi\animal.png
+* app\src\main\res\drawable-nodpi\autotip.png
+* app\src\main\res\drawable-nodpi\bomb.png
+* app\src\main\res\drawable-nodpi\cover.png
+* app\src\main\res\drawable-nodpi\explosion.png
+* app\src\main\res\drawable-nodpi\grid.png
+* app\src\main\res\drawable-nodpi\icon.png
+* app\src\main\res\drawable-nodpi\life.png
+* app\src\main\res\drawable-nodpi\life_add.png
+* app\src\main\res\drawable-nodpi\life_del.png
+* app\src\main\res\drawable-nodpi\loading_01.png
+* app\src\main\res\drawable-nodpi\loading_02.png
+* app\src\main\res\drawable-nodpi\loading_03.png
+* app\src\main\res\drawable-nodpi\loading_04.png
+* app\src\main\res\drawable-nodpi\loading_05.png
+* app\src\main\res\drawable-nodpi\loading_06.png
+* app\src\main\res\drawable-nodpi\loading_07.png
+* app\src\main\res\drawable-nodpi\loading_08.png
+* app\src\main\res\drawable-nodpi\loading_09.png
+* app\src\main\res\drawable-nodpi\loading_10.png
+* app\src\main\res\drawable-nodpi\number.png
+* app\src\main\res\drawable-nodpi\result.png
+* app\src\main\res\drawable-nodpi\time.png
+* app\src\main\res\drawable-nodpi\word.png
+* app\src\main\res\drawable-nodpi\word2.png
+* app\src\main\res\layout\
+* app\src\main\res\layout\main.xml
+* app\src\main\res\raw\
+* app\src\main\res\raw\s_background.ogg
+* app\src\main\res\raw\s_bomb.ogg
+* app\src\main\res\raw\s_cool.ogg
+* app\src\main\res\raw\s_disappear3.ogg
+* app\src\main\res\raw\s_disappear4.ogg
+* app\src\main\res\raw\s_disappear5.ogg
+* app\src\main\res\raw\s_fill.ogg
+* app\src\main\res\raw\s_good.ogg
+* app\src\main\res\raw\s_levelup.ogg
+* app\src\main\res\raw\s_lifeadd.ogg
+* app\src\main\res\raw\s_lifedel.ogg
+* app\src\main\res\raw\s_monster.ogg
+* app\src\main\res\raw\s_perfect.ogg
+* app\src\main\res\raw\s_readygo.ogg
+* app\src\main\res\raw\s_slide.ogg
+* app\src\main\res\raw\s_super.ogg
+* app\src\main\res\raw\s_timeover.ogg
+* app\src\main\res\values\
+* app\src\main\res\values\strings.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* proguard.cfg
+* settings.gradle
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
